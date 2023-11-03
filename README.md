@@ -1,4 +1,5 @@
 Are you new to Typescript? Do you need help creating and configuring a project directory for Typescript and Node? This article will guide you on how to create a project directory for Node and Typescript.
+Are you new to Typescript? Do you need help creating and configuring a project directory for Typescript and Node? This article will guide you on how to create a project directory for Node and Typescript.
 
 This article will guide you through 5 key steps as follows:
 
@@ -10,6 +11,8 @@ This article will guide you through 5 key steps as follows:
 
 After completing this guide, you will have created a project directory in which you can:
 
+ - run the Typescript code without manual compilation step
+ - compile Typescript source code to JS build code
  - run the Typescript code without manual compilation step
  - compile Typescript source code to JS build code
  - run JS build code and
