@@ -1,5 +1,4 @@
 Are you new to Typescript? Do you need help creating and configuring a project directory for Typescript and Node? This article will guide you on how to create a project directory for Node and Typescript.
-Are you new to Typescript? Do you need help creating and configuring a project directory for Typescript and Node? This article will guide you on how to create a project directory for Node and Typescript.
 
 This article will guide you through 5 key steps as follows:
 
@@ -23,9 +22,9 @@ using custom npm commands.
 ## 1.Intialize Project Directory and Install Dev Dependencies
 First and foremost, we re going to create a project directory, generate `package.json` file and install preliminary dependencies in the following sequence. 
 
-a)  Create a folder with a name of your choice and open it in your favorite IDE.
-b)  Generate package.json file using the command `npm init -y`
-c)  Install development dependencies using the command
+1. Create a folder with a name of your choice and open it in your favorite IDE.
+2. Generate package.json file using the command `npm init -y`
+3. Install development dependencies using the command
 
 `npm install -D typescript ts-node @types/node nodemon`
 
@@ -39,8 +38,8 @@ By executing the above command, we have installed
 ## 2.Generate and edit Typescript configuration file
 After step one, we can successfully create and execute Typescript code but it would not be convenient enough. In order to take better advantage of Typescript, we need to adopt some of the settings it provides. We will generate `tsconfig.json` file and make a few changes in the following sequence:
 
- a)  Run the command `tsc --init` to generate tsconfig.json file.
- b)  Replace your `tsconfig.json` file with the following configs
+ 1. Run the command `tsc --init` to generate tsconfig.json file.
+ 2. Replace your `tsconfig.json` file with the following configs
 ```
 {
   "compilerOptions": {
@@ -60,7 +59,7 @@ After step one, we can successfully create and execute Typescript code but it wo
 These are not the only Typescript configurations that you can use. This is what you need to get started. Visit [Typescript Documentation](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#:~:text=The%20tsconfig.json%20file%20specifies,compiler%20flags%20enabled%20by%20default.) to learn more about Typescript configuration.
 
 ## 3.Test your Typescript configuration
-Now that we have configured Typescript, let us see if we have done everything correctly up to this point. Below is a sequence of actions we need to perform to test the configuration.
+We have configure Typescript, let us see if we have done everything correctly up to this point. Below is a sequence of actions we need to perform to test the configuration.
 
  i). Create `src` directory in your project directory and `index.ts` file inside it.
  ii). Write a simple piece of Typescript code in `index.ts` that prints a string on console. For example:
@@ -78,14 +77,21 @@ iv). Compile Typescript code and run compiled code.
 Assuming you successfully followed the above procedure, your code did run without errors and produced the expected output, you can have successfully configured Typescript in this project directory.
 
 ## 4. Customize npm scripts
-  -Replace the scripts in package.json with the following settings
+After successfully testing the configuration, we need to add executable actions to package.json file. This will enable you to compile and run your code with little effort using `npm run <action>` commands.
+ 
+Replace the scripts in package.json with the following settings
 ```
 "scripts": {
     "build": "tsc",
     "dev": "ts-node src/index",
-    "start": "node ./build/index"
+    "start": "node ./build/index",
+    "nodemon":"nodemon src/index"
   },
 ```
+- build: Executed as `npm run build`. Compiles your Typescript code and writes it in the `outDir` directory as configured in `tsconfig.json`.
+- dev: Executed as `npm run dev`. Runs Typescript files in development mode without emitting compiled code.
+- start: Executed as `npm start`. Runs code that has been compile into JavaScript.
+- nodemon: Executed as `npm run nodemon`. Continuously runs Typescript code and restarts automatically on every change.
 
 
 ## 5.Test npm script commands
