@@ -60,18 +60,22 @@ After step one, we can successfully create and execute Typescript code but it wo
 These are not the only Typescript configurations that you can use. This is what you need to get started. Visit [Typescript Documentation](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#:~:text=The%20tsconfig.json%20file%20specifies,compiler%20flags%20enabled%20by%20default.) to learn more about Typescript configuration.
 
 ## 3.Test your Typescript configuration
- I. Create `src` directory in your project directory and create `index.ts` file inside it.
- II. Write a simple piece of Typescript code in `index.ts` that prints a string on console.
+We have configure Typescript, let us see if we have done everything correctly up to this point. Below is a sequence of actions we need to perform to test the configuration.
+
+ i). Create `src` directory in your project directory and `index.ts` file inside it.
+ ii). Write a simple piece of Typescript code in `index.ts` that prints a string on console. For example:
 
 ```
 const projectName: string = 'Project creater'
 console.log(projectName)
 ```
-III. Run Typescript code before compilation
+iii). Run Typescript code before compilation
 run `ts-node src/index.ts`
-IV. Compile Typescript code and run compiled code
-run `tsc` command to generate `./build` directory
-run `node ./build/index.js` to test compiled code
+iv). Compile Typescript code and run compiled code.
+- run `tsc` command to generate `./build` directory
+- run `node ./build/index.js` to test compiled code.
+
+Assuming you successfully followed the above procedure, your code did run without errors and produced the expected output, you can have successfully configured Typescript in this project directory.
 
 ## 4. Customize npm scripts
   -Replace the scripts in package.json with the following settings
