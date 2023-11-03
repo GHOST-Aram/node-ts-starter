@@ -60,7 +60,7 @@ After step one, we can successfully create and execute Typescript code but it wo
 These are not the only Typescript configurations that you can use. This is what you need to get started. Visit [Typescript Documentation](https://www.typescriptlang.org/docs/handbook/tsconfig-json.html#:~:text=The%20tsconfig.json%20file%20specifies,compiler%20flags%20enabled%20by%20default.) to learn more about Typescript configuration.
 
 ## 3.Test your Typescript configuration
-We have configure Typescript, let us see if we have done everything correctly up to this point. Below is a sequence of actions we need to perform to test the configuration.
+Now that we have configured Typescript, let us see if we have done everything correctly up to this point. Below is a sequence of actions we need to perform to test the configuration.
 
  i). Create `src` directory in your project directory and `index.ts` file inside it.
  ii). Write a simple piece of Typescript code in `index.ts` that prints a string on console. For example:
