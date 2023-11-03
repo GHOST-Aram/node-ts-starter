@@ -1,3 +1,5 @@
+# Setting Up an Initial Project Directory for TypeScript and Node.js
+
 Are you new to Typescript? Do you need help creating and configuring a project directory for Typescript and Node? This article will guide you on how to create a project directory for Node and Typescript.
 
 This article will guide you through 5 key steps as follows:
