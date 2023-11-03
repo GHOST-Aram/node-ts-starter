@@ -94,6 +94,10 @@ Replace the scripts in package.json with the following settings
 - `dev`: Executed as `npm run dev`. Runs Typescript files in development mode without emitting compiled code.
 - `start``: Executed as `npm start`. Runs code that has been compile into JavaScript.
 - `nodemon`: Executed as `npm run nodemon`. Continuously runs Typescript code and restarts automatically on every change.
+- `build`: Executed as `npm run build`. Compiles your Typescript code and writes it in the `outDir` directory as configured in `tsconfig.json`.
+- `dev`: Executed as `npm run dev`. Runs Typescript files in development mode without emitting compiled code.
+- `start``: Executed as `npm start`. Runs code that has been compile into JavaScript.
+- `nodemon`: Executed as `npm run nodemon`. Continuously runs Typescript code and restarts automatically on every change.
 
 
 ## 5.Test npm script commands
