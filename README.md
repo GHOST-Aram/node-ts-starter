@@ -23,9 +23,9 @@ using custom npm commands.
 ## 1.Intialize Project Directory and Install Dev Dependencies
 First and foremost, we re going to create a project directory, generate `package.json` file and install preliminary dependencies in the following sequence. 
 
-1. Create a folder with a name of your choice and open it in your favorite IDE.
-2. Generate package.json file using the command `npm init -y`
-3. Install development dependencies using the command
+a) Create a folder with a name of your choice and open it in your favorite IDE.
+b) Generate package.json file using the command `npm init -y`
+c) Install development dependencies using the command
 
 `npm install -D typescript ts-node @types/node nodemon`
 
@@ -39,8 +39,8 @@ By executing the above command, we have installed
 ## 2.Generate and edit Typescript configuration file
 After step one, we can successfully create and execute Typescript code but it would not be convenient enough. In order to take better advantage of Typescript, we need to adopt some of the settings it provides. We will generate `tsconfig.json` file and make a few changes in the following sequence:
 
- 1. Run the command `tsc --init` to generate tsconfig.json file.
- 2. Replace your `tsconfig.json` file with the following configs
+ a) Run the command `tsc --init` to generate tsconfig.json file.
+ b) Replace your `tsconfig.json` file with the following configs
 ```
 {
   "compilerOptions": {
