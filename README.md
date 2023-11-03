@@ -88,13 +88,19 @@ Replace the scripts in package.json with the following settings
     "nodemon":"nodemon src/index"
   },
 ```
-- build: Executed as `npm run build`. Compiles your Typescript code and writes it in the `outDir` directory as configured in `tsconfig.json`.
-- dev: Executed as `npm run dev`. Runs Typescript files in development mode without emitting compiled code.
-- start: Executed as `npm start`. Runs code that has been compile into JavaScript.
-- nodemon: Executed as `npm run nodemon`. Continuously runs Typescript code and restarts automatically on every change.
+- `build`: Executed as `npm run build`. Compiles your Typescript code and writes it in the `outDir` directory as configured in `tsconfig.json`.
+- `dev`: Executed as `npm run dev`. Runs Typescript files in development mode without emitting compiled code.
+- `start``: Executed as `npm start`. Runs code that has been compile into JavaScript.
+- `nodemon`: Executed as `npm run nodemon`. Continuously runs Typescript code and restarts automatically on every change.
 
 
 ## 5.Test npm script commands
-`npm run dev`
-`npm run build`
-`npm run start`
+Run the commands below to confirm that they work as described in step 4.
+
+- run in dev mode:  `npm run dev`
+- compile Typescript into JavaScript: `npm run build`
+- run compiled JavaScript: `npm run start`
+- run with auto-restart on change: `npm run nodemon`
+
+
+Finally, if you are interested in cloning this project starter, feel free to do so from [my github repository](https://github.com/GHOST-Aram/node-ts-starter/tree/main).
