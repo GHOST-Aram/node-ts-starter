@@ -1,37 +1,37 @@
-# node-ts-starter
-This an Initialized project directory for Node and Typescript
-
-
-Are you new to Typescript (TS)? Do you need help creating and configuring a project directory for TS and Node? This article will guide you on how to create a project directory for Node and TS.
+Are you new to Typescript? Do you need help creating and configuring a project directory for Typescript and Node? This article will guide you on how to create a project directory for Node and Typescript.
 
 This article will guide you through 5 key steps as follows:
 
  1. Intialize project directory
- 2. Generate and edit TS configuration file
- 3. Test your TS configuration
+ 2. Generate and edit Typescript configuration file
+ 3. Test your Typescript configuration
  4. Customize npm scripts
  5. Test npm script commands
 
 After completing this guide, you will have created a project directory in which you can:
 
- - run the TS code without manual compilation step
- - compile TS source code to JS build code
+ - run the Typescript code without manual compilation step
+ - compile Typescript source code to JS build code
  - run JS build code and
  - run your code automatically on every change
 
 using custom npm commands.
 
 ## 1.Intialize Project Directory
-I. Create a folder with a name of your choice and open it in your favorite IDE.
-I. Generate package.json file using the command `npm init`
-I. Install dev dependencies 
+First and foremost, we re going to create a project directory, generate `package.json` file and install preliminary dependencies in the following sequence. 
+
+1. Create a folder with a name of your choice and open it in your favorite IDE.
+2. Generate package.json file using the command `npm init -y`
+3. Install development dependencies using the command
 
 `npm install -D typescript ts-node @types/node nodemon`
 
--typescipt for Typescript language.
--ts-node to run TS code without manual compiling
--@types/node Typescript types for node
--nodemon for server auto-restart on change
+By executing the above command, we have installed
+
+- typescipt for Typescript language.
+- ts-node to run Typescript code without manual compiling
+- @types/node Typescript types for node
+- nodemon for server auto-restart on code change
 
 ## 2.Generate and edit Typescript configuration file
  I. Run the command `tsc --init` to generate tsconfig.json file.
